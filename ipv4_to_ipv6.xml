@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<subnets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<subnet ipv4="134.67.120.xxx">
+		<ipv6>2620:117:5040:78::f0xx</ipv6>
+	</subnet>
+	<subnet ipv4="134.67.202.xxx">
+		<ipv6>2620:117:506f:ca::f0xx</ipv6>
+	</subnet>
+	<subnet ipv4="134.67.141.xxx">
+		<ipv6>2620:117:5074:8d::f0xx</ipv6>
+	</subnet>
+	<subnet ipv4="134.67.223.xxx">
+		<ipv6>2620:117:5040:df::f0xx</ipv6>
+	</subnet>
+	<subnet ipv4="134.67.213.xxx">
+		<ipv6>2620:117:503f:d5::f0xx</ipv6>
+	</subnet>
+	<subnet ipv4="134.67.19.xxx">
+		<ipv6>2620:117:506f:1f4::f0xx</ipv6>
+	</subnet>
+	<subnet ipv4="134.67.235.xxx">
+		<ipv6>2620:117:5040:eb::f0xx</ipv6>
+	</subnet>
+	<subnet ipv4="204.47.193.xxx">
+		<ipv6>2620:117:5073:a::f0xx</ipv6>
+	</subnet>
+	<subnet ipv4="204.47.88.xxx">
+		<ipv6>2620:117:5072:a::f0xx</ipv6>
+	</subnet>
+	<subnet ipv4="134.67.27.xxx">
+		<ipv6>2620:117:5040:1b::f0xx</ipv6>
+	</subnet>
+	<subnet ipv4="134.67.22.xxx">
+		<ipv6>2620:117:506f:16::f0xx</ipv6>
+	</subnet>
+	<subnet ipv4="204.46.24.xxx">
+		<ipv6>2620:117:502c:69::f0xx</ipv6>
+	</subnet>
+	<subnet ipv4="134.67.21.xxx">
+		<ipv6>2620:117:506f:15::f0xx</ipv6>
+	</subnet>
+	<subnet ipv4="134.67.99.xxx">
+		<ipv6>2620:117:506f:63::f0xx</ipv6>
+	</subnet>
+	<subnet ipv4="134.67.32.xxx">
+		<ipv6>2620:117:5040:20::f0xx</ipv6>
+	</subnet>
+	<subnet ipv4="134.67.222.xxx">
+		<ipv6>2620:117:5040:de::f0xx</ipv6>
+	</subnet>
+	<subnet ipv4="134.67.208.xxx">
+		<ipv6>2620:117:5040:d0::f0xx</ipv6>
+	</subnet>
+	<subnet ipv4="10.140.4.xxx">
+		<ipv6>2620:117:5086:25c::f0xx</ipv6>
+	</subnet>
+	<subnet ipv4="134.67.228.xxx">
+		<ipv6>2620:117:5040:e4::f0xx</ipv6>
+	</subnet>
+</subnets>
