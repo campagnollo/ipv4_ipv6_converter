@@ -20,11 +20,6 @@ class gui():
         self.num1Entry = Entry(self.root)
         self.num1Entry.pack(side=LEFT)
 
-        # Label(self.root, text="+").pack(side=LEFT)
-
-        # self.num2Entry = Entry(self.root)
-        # self.num2Entry.pack(side=LEFT)
-
         self.equalButton = Button(self.root, text="convert to ipv6")
         self.equalButton.bind("<Button-1>", self.get_sum)
         self.equalButton.pack(side=LEFT)
