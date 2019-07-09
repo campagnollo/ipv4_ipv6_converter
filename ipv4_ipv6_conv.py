@@ -35,13 +35,12 @@ class gui():
         self.ipv6Output.delete(0, END)
 
         multi = 1
-        sum = 0
+        netid=0
         while ipv4[-1] != ".":
             raw = int(ipv4[-1])
-            sum += raw * multi
+            netid += raw * multi
             ipv4 = ipv4[:-1]
             multi *= 10
-        netid = sum
         netid6 = (str(hex(netid)))[2:]
         if len(netid6) < 2:
             netid6 = "0" + netid6
