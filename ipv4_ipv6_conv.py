@@ -8,7 +8,7 @@ def main():
     subnets = {}
     for child in xmlroot.findall('subnet'):
         subnets[child.get('ipv4')] = child[0].text
-    interface = gui(subnets)
+    gui(subnets)
 
 
 class gui():
@@ -17,34 +17,32 @@ class gui():
         self.subnets = subnets
         self.root = Tk()
 
-        self.num1Entry = Entry(self.root)
-        self.num1Entry.pack(side=LEFT)
+        self.ipv4Entry = Entry(self.root)
+        self.ipv4Entry.pack(side=LEFT)
 
-        self.equalButton = Button(self.root, text="convert to ipv6")
-        self.equalButton.bind("<Button-1>", self.get_sum)
-        self.equalButton.pack(side=LEFT)
 
-        self.sumEntry = Entry(self.root, width=30)
-        self.sumEntry.pack(side=LEFT)
+        self.convertButton = Button(self.root, text="convert to ipv6")
+        self.convertButton.bind("<Button-1>", self.ipv4toipv6)
+        self.convertButton.pack(side=LEFT)
+
+        self.ipv6Output = Entry(self.root, width=30)
+        self.ipv6Output.pack(side=LEFT)
 
         self.root.mainloop()
 
-    def get_sum(self, event):
-        ipv4 = str(self.num1Entry.get())
-        self.sumEntry.delete(0, END)
+    def ipv4toipv6(self, event):
+        ipv4 = str(self.ipv4Entry.get())
+        self.ipv6Output.delete(0, END)
 
         multi = 1
         sum = 0
-        netid = 0
         while ipv4[-1] != ".":
             raw = int(ipv4[-1])
             sum += raw * multi
-            # sum+=raw
             ipv4 = ipv4[:-1]
             multi *= 10
         netid = sum
-        netid6 = str(hex(netid))
-        netid6 = netid6[2:]
+        netid6 = (str(hex(netid)))[2:]
         if len(netid6) < 2:
             netid6 = "0" + netid6
         ipv4 = ipv4 + "xxx"
@@ -54,7 +52,7 @@ class gui():
         except KeyError:
             ipv6 = "No known IPv4/IPv6 relationship"
 
-        self.sumEntry.insert(0, ipv6)
+        self.ipv6Output.insert(0, ipv6)
 
-
-main()
+if __name__ == '__main__':
+    main()
