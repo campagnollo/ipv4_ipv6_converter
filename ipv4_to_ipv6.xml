@@ -6,4 +6,4 @@
 	<subnet ipv4="172.16.1.xxx">
 		<ipv6>1aaa:1bbb:1ccc:1d::f0xx</ipv6>
 	</subnet>
-	
+</subnets>
